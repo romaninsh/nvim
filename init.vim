@@ -22,8 +22,12 @@ Plug 'benekastah/neomake'
 Plug 'afternoon/vim-phpunit'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown' " https://github.com/plasticboy/vim-markdown.git
-"Plug 'shougo/deoplete.nvim'
-"Plug 'shawncplus/phpcomplete.vim'
+Plug 'shawncplus/phpcomplete.vim'
+Plug 'shougo/deoplete.nvim'
+Plug 'SevereOverfl0w/deoplete-github'
+Plug 'Shougo/neco-vim'
+Plug 'tpope/vim-rhubarb'
+"Plug 'floobits/floobits-neovim'
 
 
 Plug 'airblade/vim-gitgutter'
@@ -197,6 +201,7 @@ source ~/.nvim/config/nerdtree.vim
 source ~/.nvim/config/cscope.vim
 source ~/.nvim/config/syntastic.vim
 source ~/.nvim/config/ctrlp.vim
+let g:deoplete#enable_at_startup = 1
 
 " Load local config if exists
 if filereadable(expand("~/.nvim/config/local.vim"))
