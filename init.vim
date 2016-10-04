@@ -1,6 +1,15 @@
-let g:python_host_prog='/usr/bin/python3'
+let g:python_host_prog='/usr/local/bin/python'
+let g:python3_host_prog='/usr/local/bin/python3'
+
+"let g:phpqa_messdetector_autorun = 0
+"let g:phpqa_codesniffer_autorun = 0
+"let g:phpqa_codecoverage_autorun = 0
+"let g:phpqa_codecoverage_file = "build/logs/clover.xml"
+"
+
 
 set nocompatible
+"set autoread
 filetype off
 let mapleader=","
 
@@ -14,7 +23,7 @@ Plug 'jlanzarotta/bufexplorer' " use \bt to toggle buffers
 Plug 'bigeagle/molokai'  " color theme
 Plug 'vim-airline/vim-airline'  " line at the bottom
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic' " linter
+"Plug 'scrooloose/syntastic' " linter
 Plug 'https://github.com/AndrewRadev/linediff.vim' "Linediff
 Plug 'https://github.com/digitaltoad/vim-pug' " Jade / PUG syntax
 
@@ -22,9 +31,10 @@ Plug 'benekastah/neomake'
 Plug 'afternoon/vim-phpunit'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown' " https://github.com/plasticboy/vim-markdown.git
-Plug 'shawncplus/phpcomplete.vim'
+"Plug 'shawncplus/phpcomplete.vim'
 Plug 'shougo/deoplete.nvim'
-Plug 'SevereOverfl0w/deoplete-github'
+"Plug 'joonty/vim-phpqa'
+"Plug 'SevereOverfl0w/deoplete-github'
 Plug 'Shougo/neco-vim'
 Plug 'tpope/vim-rhubarb'
 "Plug 'floobits/floobits-neovim'
@@ -33,7 +43,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'vim-scripts/DrawIt'
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 "Plug 'easymotion/vim-easymotion'
 Plug 'majutsushi/tagbar'
 "Plug 'embear/vim-localvimrc'
