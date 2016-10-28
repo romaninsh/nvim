@@ -22,31 +22,43 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jlanzarotta/bufexplorer' " use \bt to toggle buffers
 Plug 'bigeagle/molokai'  " color theme
 Plug 'vim-airline/vim-airline'  " line at the bottom
-Plug 'scrooloose/nerdtree'
-"Plug 'scrooloose/syntastic' " linter
-Plug 'https://github.com/AndrewRadev/linediff.vim' "Linediff
-Plug 'https://github.com/digitaltoad/vim-pug' " Jade / PUG syntax
 
-Plug 'benekastah/neomake'
-Plug 'afternoon/vim-phpunit'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown' " https://github.com/plasticboy/vim-markdown.git
-"Plug 'shawncplus/phpcomplete.vim'
+"Plug 'benekastah/neomake'
+"Plug 'afternoon/vim-phpunit'
+"Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown' " https://github.com/plasticboy/vim-markdown.git
+
+
+"""" 1
+Plug 'shawncplus/phpcomplete.vim'
 Plug 'shougo/deoplete.nvim'
-"Plug 'joonty/vim-phpqa'
-"Plug 'SevereOverfl0w/deoplete-github'
-Plug 'Shougo/neco-vim'
-Plug 'tpope/vim-rhubarb'
-"Plug 'floobits/floobits-neovim'
-
-
 Plug 'airblade/vim-gitgutter'
 
-Plug 'vim-scripts/DrawIt'
+"""" 2
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic' " linter
+Plug 'https://github.com/digitaltoad/vim-pug' " Jade / PUG syntax
+Plug 'https://github.com/AndrewRadev/linediff.vim' "Linediff
+Plug 'majutsushi/tagbar'
+
+
+"""" 3
+"Plug 'Shougo/neco-vim'
+"Plug 'tpope/vim-rhubarb'
+"Plug 'vim-scripts/DrawIt'
+"Plug 'justinmk/vim-gtfo'
+
+
+
+"Plug 'joonty/vim-phpqa'
+"Plug 'SevereOverfl0w/deoplete-github'
+"Plug 'floobits/floobits-neovim'
+"Plug 'embear/vim-localvimrc'
+
+
+
 "Plug 'terryma/vim-multiple-cursors'
 "Plug 'easymotion/vim-easymotion'
-Plug 'majutsushi/tagbar'
-"Plug 'embear/vim-localvimrc'
 "Plug 'jrosiek/vim-mark'
 "Plug 'kien/rainbow_parentheses.vim'
 
@@ -69,9 +81,9 @@ Plug 'tpope/vim-fugitive'
 "Plug 'bigeagle/sieve.vim'
 
 "Plug 'caio/querycommandcomplete.vim'
-Plug 'justinmk/vim-gtfo'
 
-Plug '~/.nvim/bundle/colorpicker'
+"Plug '~/.nvim/bundle/colorpicker'
+
 call plug#end()
 
 " UI
@@ -209,7 +221,7 @@ source ~/.nvim/config/airline.vim
 source ~/.nvim/config/tagbar.vim
 source ~/.nvim/config/nerdtree.vim
 source ~/.nvim/config/cscope.vim
-source ~/.nvim/config/syntastic.vim
+"source ~/.nvim/config/syntastic.vim
 source ~/.nvim/config/ctrlp.vim
 let g:deoplete#enable_at_startup = 1
 
